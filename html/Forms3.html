@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form input types</title>
+    </head>
+
+    <body>
+        <h1>html5 input types</h1>
+        <form method="post" action="http://www.deitel.com">
+            <p><label>Color:
+                <input type="color" value="#ff5733" autofocus />
+            </label></p>
+            <p><label>Date:
+                <input type="Date"/>
+            </label></p>
+            <p><label>Datetime:
+                <input type="Datetime"/>
+            </label></p>
+            <p><label>Datetime local:
+                <input type="Datetime-local"/>
+            </label></p>
+            <p><label>Email:
+                <input type="email" placeholder="name@domain.com"/>
+            </label></p>
+            <p><label>Month:
+                <input type="month"/>
+            </label></p>
+            <p><label>Number:
+                <input type="number" min="0" max="999" step="3" value="87"/><!--每次遞增3-->
+            </label></p>
+            <p><label>Range:
+                <input type="range" min="-9" max="9" step="1" value="4"/>
+            </label></p>
+            <p><label>Search:
+                <input type="search" placeholder="search query"/>
+            </label></p>
+            <p><label>Tel:<!--The required attribute forces the user to enter a value before submitting the form.-->
+                <input type="tel" placeholder="(###) ###-####" pattern="\(\d{3}\)+\d{3}-\d{4}" required/>
+            </label></p>
+            <p><label>Time:
+                <input type="time" />
+            </label></p>
+            <p><label>Url:
+                <input type="url" placeholder="http://www.domainname.com"/>
+            </label></p>
+            <p><label>Week:
+                <input type="week" />
+            </label></p>
+            <p>
+                <input type="submit" value="click to submit"/>
+                <input type="reset" value="click to clear"/>
+            </p>
+        </form>
+    </body>
+</html>

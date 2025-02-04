@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>conflicting styles</title>
+        <style type="text/css">
+            body{font-family: 'Courier New', Courier, monospace;}
+            a.nodec{text-decoration: rgb(255, 55, 0);}/*selector targets all <a> elements with the class nodec*/
+            a:hover{text-decoration:underline;}/*滑鼠碰到時出現底線*/
+            li em{font-weight: bold;}/*all em elements that are children of li elements set to bold*/
+            h1,em{text-decoration: underline;}
+            ul{margin-left: 40px;}
+            ul ul{font-size: 1.8em;color: brown;}/*targets nested <ul> elements*/
+            p::first-letter{color:hotpink;font-size: larger;}/*pseudo element*/
+        </style>
+    </head>
+    <body>
+        <h1>shopping list</h1>
+        <ul>
+            <li>Milk</li>
+            <li>Bread
+                <ul>
+                    <li>white bread</li>
+                    <li>rye bread</li>
+                    <li>while wheat bread</li>
+                </ul>
+            </li>
+            <li>carrot</li>
+            <li>yogurt</li>
+            <li>pizza<em>with nushrooms</em></li>
+        </ul>
+        <p><em>Go to the</em>
+        <a class="nodec" href="http://www.deitel.com">Grocery store</a>
+        </p>
+        <p>another paragraph</p>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+/* Define styles for paragraphs */
+p { 
+    font-size: 1.3em;
+    font-family: verdana, arial, sans-serif; 
+}
+
+/* Define styles for span elements */
+span { 
+    color: red;
+    font-size: .6em;
+    height: 1em; 
+}
+
+/* Define styles for superscript elements */
+.super { 
+    position: relative;
+    top: -1ex; 
+}
+
+/* Define styles for subscript elements */
+.sub { 
+    position: relative;
+    bottom: -1ex; 
+}
+
+/* Define styles for elements shifted to the left */
+.shiftleft { 
+    position: relative;
+    left: -1ex; 
+}
+
+/* Define styles for elements shifted to the right */
+.shiftright { 
+    position: relative;
+    right: -1ex; 
+}

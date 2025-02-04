@@ -1,0 +1,64 @@
+/* Apply a general font style */
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style links with class 'nodec' */
+a.nodec {
+    color: rgb(255, 55, 0); /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+a.nodec:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Bold the <em> elements inside <li> */
+li em {
+    font-weight: bold;
+}
+
+/* Underline <h1> and <em> elements */
+h1, em {
+    text-decoration: underline;
+}
+
+/* Add left margin to <ul> */
+ul {
+    margin-left: 40px;
+}
+
+/* Style nested <ul> elements */
+ul ul {
+    font-size: 1.8em; /* Increase font size */
+    color: brown; /* Change text color */
+}
+
+/* Add pseudo-element to <h1> */
+h1::before {
+    content: "🛒 ";
+    color: green;
+    font-size: 1.2em;
+}
+
+/* Add pseudo-element to <li> */
+li::after {
+    content: " ✔️";
+    color: green;
+    font-size: 0.8em;
+}
+
+/* Style <p> elements */
+p {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Add pseudo-element to <p> */
+p::before {
+    content: "📝 ";
+    color: blue;
+    font-size: 1em;
+    position: absolute;
+    left: -25px;
+}

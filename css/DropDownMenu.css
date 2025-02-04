@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    font-weight: bold;
+    color: white;
+    border: 2px solid royalblue;
+    text-align: center;
+    width: 10em;
+    background-color: royalblue;
+}
+nav ul {
+    display: none;/*默認情況下隱藏導航選單中的子選單。*/
+    list-style:none;/*移除子選單的項目符號*/
+    margin: 0;
+    padding: 0;
+}
+nav:hover ul {
+    display: block;/*當滑鼠懸停在導航選單上時，顯示子選單。*/
+}
+nav ul li {
+    border-top: 2px solid royalblue;
+    background-color: white;
+    width: 10em;
+    color: black;
+}
+nav ul li:hover {
+    background-color: powderblue;
+}
+a {
+    text-decoration: none;
+}
+
+/* Menu 2 using flex */
+nav.menu2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    border: 2px solid darkred;
+    text-align: center;
+    width: 10em;
+    background-color: darkred;
+}
+
+nav.menu2 ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+nav.menu2:hover ul {
+    display: flex;
+}
+
+nav.menu2 ul li {
+    border-top: 2px solid darkred;
+    background-color: white;
+    width: 10em;
+    color: black;
+}
+
+nav.menu2 ul li:hover {
+    background-color: lightcoral;
+}
+
+/* Menu 3 using grid */
+nav.menu3 {
+    display: grid;
+    font-weight: bold;
+    color: white;
+    border: 2px solid darkgreen;
+    text-align: center;
+    width: 10em;
+    background-color: darkgreen;
+}
+
+nav.menu3 ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+}
+
+nav.menu3:hover ul {
+    display:
+}
+
+nav.menu3 ul li {
+    border-top: 2px solid darkgreen;
+    background-color: white;
+    width: 10em;
+    color: black;
+}
+
+nav.menu3 ul li:hover {
+    background-color: lightgreen;
+}
+
+/* Menu 4 using table */
+nav.menu4 {
+    display: table;
+    font-weight: bold;
+    color: white;
+    border: 2px solid darkblue;
+    text-align: center;
+    width: 10em;
+    background-color: darkblue;
+}
+
+nav.menu4 ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table-row-group;
+}
+
+nav.menu4:hover ul {
+    display:ruby;
+}
+
+nav.menu4 ul li {
+    display: table-row;
+    border-top: 2px solid darkblue;
+    background-color: white;
+    width: 10em;
+    color: black;
+}
+
+nav.menu4 ul li:hover {
+    background-color: lightblue;
+}
+
+/* Menu 5 using inline */
+nav.menu5 {
+    display: inline;
+    font-weight: bold;
+    color: white;
+    border: 2px solid darkorange;
+    text-align: center;
+    width: 10em;
+    background-color: darkorange;
+}
+
+nav.menu5 ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu5:hover ul {
+    display: inline;
+}
+
+nav.menu5 ul li {
+    border-top: 2px solid darkorange;
+    background-color: white;
+    width: 10em;
+    color: black;
+}
+
+nav.menu5 ul li:hover {
+    background-color: lightcoral;
+}

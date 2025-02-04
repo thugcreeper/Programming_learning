@@ -1,0 +1,25 @@
+.box {
+    width: 50%;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid blue;
+    background-color: lightyellow;
+    font-family: Arial, sans-serif;
+}
+
+.scroll {
+    overflow: scroll; /* Adds scrollbars when content overflows */
+}
+
+.hidden {
+    overflow: hidden; /* Hides content that overflows */
+}
+
+.auto {
+    overflow: auto; /* Adds scrollbars only when necessary */
+}
+
+.visible {
+    overflow: visible; /* Default, content overflows the box */
+}

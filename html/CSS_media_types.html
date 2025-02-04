@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Types</title>
+    <style>
+        @media print {
+            body {
+                background-color: white;
+            }
+            h1 {
+                color: seagreen;
+            }
+            p {
+                font-size: 14pt;
+                color: steelblue;
+                font-family: "Times New Roman", Times, serif;
+            }
+        } /* End @media print declaration. */
+        p{
+            font-size: xx-large;
+            color:darkslategrey
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Media Types Example</h1>
+    <p>
+        This example uses CSS media types to vary how the page appears in print and how it appears on any other media.
+        This text will appear in one font on the screen and a different font on paper or in a print preview.
+        To see the difference in Internet Explorer, go to the Print menu and select Print Preview.
+        In Firefox, select Print Preview from the File menu.
+    </p>
+    <h1>當列印時會套用另一套css</h1>
+</body>
+</html>

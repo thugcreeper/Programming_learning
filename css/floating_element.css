@@ -1,0 +1,32 @@
+.highlight{
+    color:darkgreen;
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 30px;
+}
+
+header{ background-color: aqua;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: .2em;
+    }
+
+p{
+    text-align: justify;/*將段落文字對齊左右邊緣*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin:.5em;
+}
+
+h1{margin-top: 0px;}
+
+.floated{
+    background-color: coral;
+    font-size: 1.5em;
+    padding:.2em;
+    margin-left: .5em;
+    float:right;/*將元素浮動到其父元素的右側，允許其他內容圍繞該元素排列*/
+    text-align: right;
+    width:50%;
+}
+
+section{border:1px solid skyblue}
