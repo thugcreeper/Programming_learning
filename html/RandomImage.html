@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Fig. 9.5: RollDice.html -->
+<!-- Random dice image generation using Math.random. -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Images</title>
+    <style type="text/css">
+        ol {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 0;
+        }
+        ol li {
+            list-style: none;
+        }
+        ol img {
+            width: 100%;
+        }
+    </style>
+    <script src="../javascript/RandomImage.js"></script><!--Better way to include js files-->
+    <script>
+        
+
+    </script>
+</head>
+<body>
+    <h1>Choose your food</h1>
+    <form action = "#">
+        <input id = "rollButton" type = "button" value = "Roll Dice">
+    </form>
+    <ol>
+        <li><img id = "die1" src = "blank.png" width="25%" alt = "die 1 image"></li>
+        <li><img id = "die2" src = "blank.png" width="25%" alt = "die 2 image"></li>
+        <li><img id = "die3" src = "blank.png" width="25%" alt = "die 3 image"></li>
+        <li><img id = "die4" src = "blank.png" width="25%" alt = "die 4 image"></li>
+    </ol>
+</body>
+</html>
+

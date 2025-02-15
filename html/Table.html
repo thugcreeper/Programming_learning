@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Table</title>
+        <link rel="stylesheet" href="../css/table.css">
     </head>
 <body>
 
@@ -15,7 +16,9 @@
     <caption><!--The caption element specifies a table’s title.-->
         this is caption:fruits
     </caption>
-    <table border ="1">
+<div class="table_container">
+    <h1 class="titles">Original</h1>
+    <table class="original">
         <thead><!--table head-->
         <tr>
             <th>Fruits</th>
@@ -45,6 +48,105 @@
             </tr>
         </tfoot>
     </table>
-    
+</div>
+<div class="table_container">
+    <h1 class="titles">Collapse</h1>
+    <table class="collapse">
+        <thead><!--table head-->
+        <tr>
+            <th>Fruits</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+
+        <tbody><!--table body-->
+            <tr><!--table row-->
+                <th>apple</th><!--table header cell-->
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>banana</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>plum</th>
+                <th>50</th>
+            </tr>
+        </tbody>
+
+        <tfoot><!--table foot-->
+            <tr>
+                <th>Total</th>
+                <th>$80</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<div class="table_container">  
+    <h1 class="titles">round border</h1>
+    <table class="round">
+        <thead><!--table head-->
+        <tr>
+            <th>Fruits</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+
+        <tbody><!--table body-->
+            <tr><!--table row-->
+                <th>apple</th><!--table header cell-->
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>banana</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>plum</th>
+                <th>50</th>
+            </tr>
+        </tbody>
+
+        <tfoot><!--table foot-->
+            <tr>
+                <th>Total</th>
+                <th>$80</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<div class="table_container"> 
+    <h1 class="titles">dotted border</h1>
+    <table class="dotted">
+        <thead><!--table head-->
+        <tr>
+            <th>Fruits</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+
+        <tbody><!--table body-->
+            <tr><!--table row-->
+                <th>apple</th><!--table header cell-->
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>banana</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>plum</th>
+                <th>50</th>
+            </tr>
+        </tbody>
+
+        <tfoot><!--table foot-->
+            <tr>
+                <th>Total</th>
+                <th>$80</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 </body>
 </html>

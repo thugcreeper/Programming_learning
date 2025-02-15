@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/JSON.css">
+    <script src="../javascript/.js"></script><!--Better way to include js files-->
+</head>
+<body>
+    <h2>In JSON, values must be one of the following data types:</h2>
+        <ul>
+            <li>a string</li>
+            <li>a number</li>
+            <li>an object (JSON object)</li>    
+            <li>an array</li>    
+            <li>a boolean</li>    
+            <li>null</li>    
+        </ul>
+    <h1>JSON Strings</h1>
+    <p>Strings in JSON must be written in double quotes.</p>
+    <p class="example">{"name":"John"}</p>
+
+    <h1>JSON Numbers</h1>
+    <p>Numbers in JSON must be an integer or a floating point.</p>
+    <p class="example">{"age":30}</p>
+
+    <h1>JSON Objects</h1>
+    <p>Values in JSON can be objects.</p>
+    <p class="example">{
+        "employee":{"name":"John", "age":30, "city":"New York"}
+        }</p>
+
+    <h1>JSON Arrays</h1>
+    <p>Values in JSON can be arrays.</p>
+    <p class="example">{
+        "employees":["Anna","Tom","Ted","Alice"]
+    }</p>
+        
+    <h1>JSON Booleans</h1>
+    <p>Values in JSON can be true/false.</p>
+    <p class="example">{"sale":true}</p>
+
+    <h1>JSON Null</h1>
+    <p>Values in JSON can be null.</p>
+    <p class="example">{"middlename":null}</p>
+
+    <h1>JSON parse</h1>
+    <h2>Creating an Object from a JSON String</h2>
+    <p>JSON:{"name":"John", "age":30, "city":"New York"}</p>
+    <p>js object:<span id="demo"></span></p>
+
+    <h2>Data written as an JSON array will be parsed into a JavaScript array.</h2>
+    <p id="demo2"></p>
+
+    <h1>JSON stringfy</h1>
+    <p>A common use of JSON is to exchange data to/from a web server.
+        When sending data to a web server, the data has to be a string.
+        You can convert any JavaScript datatype into a string with JSON.stringify().
+    </p>
+    <h2>Stringify a JavaScript Object</h2>
+    <p>js object:{name:"arcaea",rate:"5star",downloads:"1 million",songs:["auxesia","chronostasis","mirinae","climax"]};</p>
+    <p>JSON:<span id="demo3"></span></p>
+
+    <script>
+    const txt = '{"name":"John", "age":30, "city":"New York"}'//json
+    const obj = JSON.parse(txt);// convert text into a JavaScript object:
+
+    document.getElementById("demo").innerHTML = obj.name + ", " + obj.age+ ", "+obj.city;
+
+    const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+    const myArr = JSON.parse(text);
+
+    document.getElementById("demo2").innerHTML = myArr[0];
+    //JSON.stringify() can not only convert objects and arrays into JSON strings, it can convert any JavaScript value into a string.
+    //100e5 convert to 10^7
+
+    const obj2={name:"arcaea",rate:"5star",downloads:100e5,songs:["auxesia","chronostasis","mirinae","climax"]};
+    obj2_json=JSON.stringify(obj2);
+    document.getElementById("demo3").innerHTML=obj2_json;
+    </script>
+
+</body>
+</html>

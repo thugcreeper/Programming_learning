@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_prototype</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/.css">
+    <script src="../javascript/.js"></script><!--Better way to include js files-->
+</head>
+<body>
+    <P>The JavaScript prototype property allows you to add new properties to object constructors:</P>
+    <p>The prototype property allows you to add new methods to objects constructors:</p>
+    <p id="demo"></p>
+    <script>
+    function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    }
+    Person.prototype.nationality = "English";
+    Person.prototype.name = function() {
+    return this.firstName + " " + this.lastName
+    };
+
+    const myFather = new Person("John", "Doe", 50, "blue");
+    document.getElementById("demo").innerHTML =
+    "My father is " + myFather.name(); 
+    </script>
+</body>
+</html>

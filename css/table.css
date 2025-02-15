@@ -1,0 +1,28 @@
+.original,th,td,tr{
+    border: 1px solid black;
+}
+
+.collapse th, .collapse td, .collapse tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: aquamarine;
+}
+.round th, .round td, .round tr{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:bisque;
+}
+.dotted th, .dotted td, .dotted tr{
+    border: 3px solid black;
+    border-style: dotted;
+    background-color:cadetblue;
+}
+.titles{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: deeppink;
+}
+.table_container {
+    float: left;
+    margin-right: 20px;
+}

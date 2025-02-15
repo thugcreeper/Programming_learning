@@ -1,0 +1,55 @@
+/* Basic styles for the highlighted class */
+.highlighted {
+    color: blue;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Style for the h1 and h3 headings */
+#bigheading, #smallheading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the paragraphs */
+#para1, #para2, #para3 {
+    margin: 10px 20px;
+    line-height: 1.6;
+}
+
+/* Style for the list items */
+#list li {
+    margin: 5px 0;
+}
+
+/* Style for the navigation form */
+#nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+    width: 300px;
+}
+
+/* Style for the text inputs and buttons */
+input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+input[type="button"] {
+    padding: 5px 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* Additional styles for the link */
+#link {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+#link:hover {
+    text-decoration: underline;
+}

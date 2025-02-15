@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript types</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/.css">
+    <script src="../javascript/.js"></script><!--Better way to include js files-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .data-type {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        To indicate that a variable does not contain a value, you can
+        assign the value null to it .
+    </p>
+    <div class="data-type">
+        <h2>Number</h2>
+        <p>數字類型包括整數和浮點數。例如：</p>
+        <code>
+            let integer = 42;<br>
+            let float = 3.14;
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>String</h2>
+        <p>字符串類型包括字符序列。例如：</p>
+        <code>
+            let message = "Hello, world!";
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>Boolean</h2>
+        <p>布爾類型表示真或假。例如：</p>
+        <code>
+            let isTrue = true;<br>
+            let isFalse = false;
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>Object</h2>
+        <p>對象類型表示複合值。例如：</p>
+        <code>
+            let person = {<br>
+                &nbsp;&nbsp;name: "Alice",<br>
+                &nbsp;&nbsp;age: 30<br>
+            };
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>Undefined</h2>
+        <p>未定義類型表示變量未賦值。例如：</p>
+        <code>
+            let x;
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>Null</h2>
+        <p>空類型表示沒有值。例如：</p>
+        <code>
+            let y = null;
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>BigInt</h2>
+        <p>大整數類型表示任意精度的整數。例如：</p>
+        <code>
+            let bigIntNumber = 1234567890123456789012345678901234567890n;
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>Symbol</h2>
+        <p>符號類型表示唯一且不可改變的值，用於對象屬性的標識符。例如：</p>
+        <code>
+            let symbol = Symbol("description");
+        </code>
+    </div>
+    <div class="data-type">
+        <h2>isFinite()</h2>
+        <p>checks whether a number is a finite, legal number.</p>
+        <p>Infinite (not finite) values are Infinity, -Infinity, or NaN</p>
+    </div>
+    <div class="data-type">
+        <h2>typeof()</h2>
+        <p>returns the type of a variable or an expression</p>
+    </div>
+    <div class="data-type">
+        <h2>NaN</h2>
+        <p>represents "Not a Number" value</p>
+    </div>
+    <div class="data-type">
+        <h2>Infinity</h2>
+        <p>displays a number that exceeds the limit of a floating
+            point number</p>
+    </div>
+</body>
+</html>
+

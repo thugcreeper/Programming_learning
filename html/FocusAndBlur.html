@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus And Blur</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/FocusAndBlur.css">
+    <script src="../javascript/FocusAndBlur.js"></script><!--Better way to include js files-->
+</head>
+<body>
+    <form id="myForm" action="">
+    <p><label class="fixed" for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name"></p>
+    <p><label class="fixed" for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Enter e-mail address"></p>
+    <p><label>Click here if you like this site
+        <input type="checkbox" id="like"></label></p>
+    <p><label for="comments">Any comments?</p>
+    <textarea id="comments" placeholder="Enter comments here"></textarea>
+    <p><input id="submit" type="submit">
+        <input id="reset" type="reset"></p>
+    </form>
+    <p id="helptext"></p>
+</body>
+</html>

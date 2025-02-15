@@ -1,0 +1,60 @@
+/* Basic form styling */
+#myForm {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label.fixed {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 110px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Checkbox and radio button styling */
+input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+/* Submit and reset button styling */
+input[type="submit"],
+input[type="reset"] {
+    width: 100px;
+    padding: 5px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Help text styling */
+#helptext {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #666;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f); /* Gradient background */
+
+}

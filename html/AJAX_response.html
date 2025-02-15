@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX_response</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/.css">
+    <style>
+        table,th,td {
+            border : 1px solid black;
+            border-collapse: collapse;
+          }
+          th,td {
+            padding: 5px;
+          }
+    </style>
+    <script>
+        const xhttp=new XMLHttpRequest();// creating an XMLHttpRequest object:
+        xhttp.onload=function(){//Define a Callback Function
+            const xmlDoc=this.responseXML;//get the response data as XML data
+            const x = xmlDoc.getElementsByTagName("CD");
+            let txt="<table><tr><th>Artist</th><th>Title</th></tr>";
+            for(let i=0;i<x.length;i++){
+                txt +="<tr><td>" +
+                x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +"</td></tr>";
+            }
+            txt+="</table>";
+            document.getElementById("output").innerHTML=txt;
+            headers=this.getAllResponseHeaders().split("\n");
+            let txt2="";
+            for(let header of headers){
+                txt2+=header+"<br>";
+            }
+            document.getElementById("getall").innerHTML=txt2;
+            
+        }
+        //Send a Request
+        xhttp.open("GET","XMLfile.xml");
+        xhttp.send();
+    </script>
+</head>
+<body>
+    <h1>AJAX - Server Response</h1>
+    <p id="output"></p>
+    <h2>headers</h2>
+    <p id="getall"></p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* style.css */
+
+/* 設定所有元素的邊距和內邊距為0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 設定 body 的背景顏色和字型 */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 標題 h1 的樣式 */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* section 元素的樣式 */
+section {
+    background: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* p 元素的樣式 */
+p {
+    color:maroon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* 設定#strings, #getMethods, #newArguments, #setMethods區塊 */
+#strings, #getMethods, #newArguments, #setMethods {
+    margin-bottom: 20px;
+}

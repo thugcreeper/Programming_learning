@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+}
+#video1{
+    width:70%;
+    height: auto; /* 讓高度自動調整以保持比例 */
+    margin-left: 15%;
+}
+#buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+    margin-left: 0; /* Removes the original margin */
+}
+button {
+    padding: 10px 20px;
+    width:10%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* 圓角 */
+    background-color: #007bff; /* 按鈕背景顏色 */
+    color: white; /* 按鈕文字顏色 */
+    cursor: pointer;
+    transition: background-color 0.3s; /* 平滑過渡效果 */
+}
+button:hover {
+    background-color: #0056b3; /* 按鈕懸停時的背景顏色 */
+}

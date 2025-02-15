@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/.css">
+    <!--include jQuery library from CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>  
+        $(document).ready(function(){
+            window.alert("first jQuery");
+            $("#showmore").hide();
+            $("p:has(#showmore)").click(function(){
+                $("#showmore").toggle();//toggle:Shown elements are hidden and hidden elements are shown:
+            });
+            $("#hide").click(function(){
+              $(this).hide(3000);//hide in 3sec
+            });
+            $("#style").click(function(){
+                $(this).css({"color":"red","font-size":"30px"});
+            })
+          });
+    </script>
+</head>
+<body>    
+    <p>show more info<span  id="showmore"> 鴨蛋莫鴨蛋</span></p>
+    <p id="hide">hide me</p>
+    <p id="style">style me</p>
+    <h1>jQuery</h1>
+    <h2>Selector usage</h2>
+    <h2>By tag</h2>
+    <p>$("div")</p>
+    <h2>By Id</h2>
+    <p>$("#IdName")</p>
+    <h2>By Class</h2>
+    <p>$(".ClassName")</p>
+    <h2>choode class="main" in " div "</h2>
+    <p>$("div.main")</p>
+    <h2>choode id="data" in " table "</h2>
+    <p>$("table#data")</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+        /* Add this CSS to your existing CSS file or within a <style> tag in your HTML */
+
+        /* Style for the table */
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        /* Style for the table headers */
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        /* Style for the table rows */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Style for the table headers */
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }

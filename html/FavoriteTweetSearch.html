@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FavoriteTweetSearch</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/FavoriteTweetSearch.css">
+    <script src="../javascript/FavoriteTweetSearch.js"></script><!--Better way to include js files-->
+</head>
+<body>
+    <h1>Favorite Tweet Searches</h1>
+    <p id="welcomeMessages"></p>
+    <form action="#">
+        <p><input type="text" id="query" placeholder="Enter twitter search query"></p>
+        <p><input type="text" id="tag" placeholder="tag your query">
+            <input type="button" id="savebutton" value="save">
+            <input type="button" id="clearbutton" value="clear all saved searches">
+        </p>
+    </form>
+    <h1>Previously Tagged Searches</h1>
+    <div id="searches"></div>
+</body>
+</html>

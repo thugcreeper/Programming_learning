@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic style</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <!--<link rel="stylesheet" href="../css/.css">-->
+    <script src="../javascript/DynamicStyle.js"></script><!--Better way to include js files-->
+    <style>
+        #subimg img{
+            width:33%;
+            height: 550px;
+            padding:5px;
+            float: right;
+        }
+        #mainimg{
+            width:289px;
+            padding: 5px;
+            float: left;
+        }
+        #imgcover{
+            height:373px;
+        }
+        img{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainimg">
+        <img id="imgcover" src="../images/draw1.jpg" alt="no image">
+    </div>
+    <div id="subimg">
+        <img src="../images/draw2.jpg" id="img1" alt="no image">
+        <img src="../images/draw3.jpg" id="img2" alt="no image">
+        <img src="../images/draw4.jpg" id="img3" alt="no image">
+        <img src="../images/draw5.jpg" id="img4" alt="no image">
+        <img src="../images/azur0.jpg" id="img5" alt="no image">
+        <img src="../images/azur1.jpg" id="img6" alt="no image">
+    </div>
+</body>
+</html>
