@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    background-color: dodgerblue;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 10px;
+  }
+  .container > div ,.container2 > div{/*container's next child div */
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .container2 {
+    gap:40px 20px;/*shorthand for row,col gap*/
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: dodgerblue;
+    padding: 10px;
+  }
+  #fat{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    /*grid-row: 2 / span 5;shorthand*/
+  }
+.equal{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aquamarine;
+    padding: 5px;
+    border: 1px solid wheat;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.diff{
+    display: grid;
+    grid-template-columns: 20px 80px 160px auto;
+    background-color: aquamarine;
+    padding: 5px;
+    border: 1px solid wheat;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.fr{
+    display: grid;
+    grid-template-columns:1fr 2fr 3fr 4fr;/*1/10,2/10...*/
+    background-color: aquamarine;
+    padding: 5px;
+    border: 1px solid wheat;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.equal div,.diff div,.fr div{
+    background-color: darkgoldenrod;
+    padding: 10px;
+    color:brown;
+    font-size: 30px;
+    text-align: center;
+}

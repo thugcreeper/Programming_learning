@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering image</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/Centeringimage.css">
+    <script src="../javascript/.js"></script><!--Better way to include js files-->
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>To center(horizontally) image,we can use <code>margin:auto</code><br>
+        but image is an inline element,we must convert it to block element
+        note:<code>margin: auto</code> does not have any effect on inline elements
+    </p>
+    <h1>example 1</h1>
+    <p id="ex1">
+        <img src="../images/scene.jpg" width="40%" height="auto" alt="no image">
+    </p>
+    <p>we can also use <code>display: flex</code> and <code> justify-content: center</code>
+        note:use flex to a container like div<br>
+    </p>   
+    <h1>example 2</h1>
+    <div id="ex2">
+        <img src="../images/scene1.jpg" width="40%" height="auto" alt="no image">
+    </div>
+
+    <h1>center(vertically) image</h1>
+    <p><code>align-items: center</code>centers the image vertically in the div container</p>
+    <div id="ex3" >
+        <img src="../images/scene.jpg" width="40%" height="auto" alt="no image">
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <!-- .代表的是目前所在位置-->
+    <!-- ..表示回到上一層資料夾-->
+    <link rel="stylesheet" href="../css/grid.css">
+    <script src="../javascript/.js"></script><!--Better way to include js files-->
+</head>
+<body>
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+    <h1>grid container</h1><hr>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <h1>inline grid container</h1><hr>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <h1>grid-column-start& end</h1><hr>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div id="fat">4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>  
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <h1>Make a grid with 4 columns of equal width:</h1>
+    <div class="equal">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>  
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <h1>Make a grid with different width:</h1>
+    <div class="diff">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>  
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <h1>use fr to divide container</h1>
+    <div class="fr">
+        <div>1fr</div>
+        <div>2fr</div>
+        <div>3fr</div>  
+        <div>4fr</div>
+        <div>1fr</div>
+        <div>2fr</div>  
+        <div>3fr</div>
+        <div>4fr</div>
+        <div>1fr</div>
+        <div>2fr</div>  
+        <div>3fr</div>
+        <div>4fr</div>
+    </div>
+</body>
+</html>

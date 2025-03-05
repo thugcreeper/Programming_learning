@@ -1,0 +1,19 @@
+/*var(--name, value)*/
+:root{
+  --color1:#1e90ff;
+  --color2: #ffffff;
+}
+body { background-color: var(--color1); }/*use the var() function to insert the value*/
+.container {
+  color: var(--color1);
+  background-color: var(--color2);
+  padding: 15px;
+}
+
+button {
+  --color3:red;/*local variable*/
+  background-color: var(--color2);
+  color: var(--color3);
+  border: 1px solid var(--color1);
+  padding: 5px;
+}
